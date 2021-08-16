@@ -1,0 +1,16 @@
+timezone: UTC
+ 
+_export:
+  td:
+    database: academy_demotest
+ 
++td-result-into-target:
+  td>: queries/mailchimp.sql
+  result_connection: tda_mailchimp
+  result_settings:
+    list_id: 57eb74b59c
+    email_column: email
+    fname_column: fname
+    lname_column: lname
+    update_existing: true
+#    grouping_columns: age, region
