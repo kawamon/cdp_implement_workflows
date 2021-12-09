@@ -1,7 +1,7 @@
 _export:
   td:
-    database: academy_demotest
-    table: sftp_account_yaml
+    database: l0_sftp_server
+    table: user_data_yaml
   sftp:
     auth_method: Password
     user_directory_is_root: false
