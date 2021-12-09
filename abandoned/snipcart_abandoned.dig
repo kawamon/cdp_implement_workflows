@@ -1,7 +1,7 @@
 _export:
   td:
-    database: academy_demotest
-    table: abandon_cart
+    database: l0_snipcart
+    table: abandoned_cart
   snipcart:
     url: https://app.snipcart.com/api/carts/abandoned?offset=0&limit=50&timeRange=LessThanAMonth
 
