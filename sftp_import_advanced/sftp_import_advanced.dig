@@ -1,6 +1,6 @@
 _export:
   td:
-    database: academy_demotest
+    database: l0_sftp_server
     table: sftp_account_advanced
   sftp:
     auth_method: Password
@@ -13,6 +13,6 @@ _export:
   create_tables: ["${td.table}"]
 
 +load_step:
-  td_load>: config/sftp_load_advaned.yml
+  td_load>: config/sftp_load_advanced.yml
   database: ${td.database}
   table: ${td.table}

@@ -29,3 +29,10 @@ in:
     - {name: td_name, type: string}
     - {name: email, type: string}
 out: {}
+filters:
+- type: add_time
+  to_column:
+    name: time
+    type: timestamp
+  from_value:
+    mode: upload_time

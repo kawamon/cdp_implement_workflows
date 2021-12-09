@@ -1,6 +1,6 @@
 _export:
   td:
-    database: academy_demotest
+    database: l0_sftp_server
     table: sftp_account_orig
   sftp:
     auth_method: Password
