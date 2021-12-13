@@ -1,1 +1,6 @@
-SELECT auth_email AS email, email AS fname, email AS lname FROM orders WHERE auth_email IS NOT NULL
+ SELECT 
+   email,
+   SPLIT_PART(COALESCE(name, 'UNKNOWN UNKNOWN'), ' ', 1) AS fname, 
+   SPLIT_PART(COALESCE(name, 'UNKNOWN UNKNOWN'), ' ', 2) AS lname 
+ FROM orders 
+ WHERE email IS NOT NULL

@@ -20,10 +20,11 @@ def write_abandoned_to_table(url, database, table):
 
     items = []
     if (r.status_code == 200):
-        resp_dict = r.json()
-        for key in resp_dict:
+        items.append(('key', r.text))
+        #resp_dict = r.json()
+        #for key in resp_dict:
             # print(f"{key}: {resp_dict[key]}")
-            items.append((key, resp_dict[key]))
+        		# items.append((key, resp_dict[key]))
 
     df = pd.DataFrame(items, columns=["key", "value"])
     client = pytd.Client(apikey=apikey, endpoint=apiserver, database=database)

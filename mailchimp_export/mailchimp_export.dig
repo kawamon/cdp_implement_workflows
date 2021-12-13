@@ -2,7 +2,7 @@ timezone: UTC
  
 _export:
   td:
-    database: academy_demotest
+    database: l0_access_log
  
 +td-result-into-target:
   td>: queries/mailchimp.sql
