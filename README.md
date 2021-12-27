@@ -1,2 +1,3 @@
-# TDA_demo_workflows
-Workflow sample templates for Treasure Academy demo exercise
+# Sample workflows for Treasure Academy Advanced training
+
+Workflow sample codes for Treasure Academy Advanced Training (Implementation)exercise
