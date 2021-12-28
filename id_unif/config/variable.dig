@@ -1,5 +1,5 @@
 td:
-  database: l0_sftp_server
+  database: l0_academy_test
 
 company_table_list:
   - tbl_one
