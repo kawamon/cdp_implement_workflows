@@ -3,8 +3,7 @@ in:
   host: ${secret:sftp.host}
   port: ${secret:sftp.port}
   user: ${secret:sftp.user}
-  password: ${secret:sftp.password}
-  auth_method: ${sftp.auth_method}
+  secret_key_file: {"content": "${secret:sftp.secret_key_file}"}
   user_directory_is_root: ${sftp.user_directory_is_root}
   timeout: ${sftp.timeout}
   path_prefix: "/cdp/user_master.csv"
