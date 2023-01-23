@@ -1,6 +1,6 @@
 _export:
   td:
-    database: academy_demotest
+    database: tk_l0_sftp_server
 
 +step1:
-  td_load>: sftp_import_XXXXXXXXX  # FIXME
+  td_load>: sftp_import_XXXXXXXXX  # <--- FIXME
