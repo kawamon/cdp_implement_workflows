@@ -1,6 +1,6 @@
 SELECT
   o.td_client_id
-  , o.email_modified
+  , o.email_modified AS email
   , o.fname
   , o.lname
   , COUNT(1) AS access_cnt
