@@ -13,7 +13,7 @@ def write_abandoned_to_table_by_json(url, database, table):
     import pytd
     import pandas as pd
     import json
-    from pandas.io.json import json_normalize
+    #from pandas.io.json import json_normalize
 
     r = requests.get(url,headers={"Accept":"application/json"},auth=requests.auth.HTTPBasicAuth(snipcart_apikey, snipcart_pass))
 
@@ -21,7 +21,7 @@ def write_abandoned_to_table_by_json(url, database, table):
     items = []
     if (r.status_code == 200):
       json_dict = json.loads(r.text)
-      df_json = json_normalize(json_dict['items'])
+      df_json = pd.json_normalize(json_dict['items'])
 
       ## Debug
       print(df_json)
